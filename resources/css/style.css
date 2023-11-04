@@ -62,6 +62,10 @@
     width: 50%;
   }
 
+  .estudiante {
+    border: #25a342;
+  }
+
   .footer .nav-link {
     color: white;
     display: block;
