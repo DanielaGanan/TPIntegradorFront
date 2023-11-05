@@ -57,7 +57,7 @@
                                 <a class="nav-link active text-white-50 bg-dark" href="#conviertete-orador">Conviértete en orador</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active " id="tickets" href="#">Comprar tickets</a>
+                                <a class="nav-link active " id="tickets" href="#compra">Comprar tickets</a>
                             </li>
                         </ul>
                     </div>
@@ -272,29 +272,83 @@
         </section>
 
             <!-- Comprar tickets -->  
-        <section id="compra">
-            <div class="d-flex flex-row mb-3 justify-content-center">
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="border border-primary">
-                        <h6>Estudiante</h6>
-                        <p>Tienen un descuento</p>
-                        <h6>80%</h6>
-                        <p>*presentar documentacón</p>
+        <section id="promo">
+            <div class="container d-flex justify-content-center">
+                <div class="row mt-4">
+                    <div class="col-12 col-md-4 mb-3 p-1">
+                        <div class="border border-primary d-flex flex-column align-items-center p-3">
+                            <h6>Estudiante</h6>
+                            <p class="small fw-normal mt-2">Tienen un descuento</p>
+                            <h6>80%</h6>
+                            <p class="small fw-light mt-2">*presentar documentacón</p>
+                        </div>
                     </div>
-                    <div class="border border-success">
-                        <h6>Trainee</h6>
-                        <p>Tienen un descuento</p>
-                        <h6>50%</h6>
-                        <p>*presentar documentacón</p>
+
+                    <div class="col-12 col-md-4 mb-3  p-1">
+                        <div class="border border-success d-flex flex-column align-items-center p-3">
+                            <h6>Trainee</h6>
+                            <p class="small fw-normal mt-2">Tienen un descuento</p>
+                            <h6>50%</h6>
+                            <p class="small fw-light mt-2">*presentar documentacón</p>
+                        </div>
                     </div>
-                    <div class="border border-warning">
-                        <h6>Junior</h6>
-                        <p>Tienen un descuento</p>
-                        <h6>15%</h6>
-                        <p>*presentar documentacón</p>
+
+                    <div class="col-12 col-md-4 mb-3  p-1">
+                        <div class="border border-warning d-flex flex-column align-items-center p-3">
+                            <h6>Junior</h6>
+                            <p class="small fw-normal mt-2">Tienen un descuento</p>
+                            <h6>15%</h6>
+                            <p class="small fw-light mt-2">*presentar documentacón</p>
+                        </div>
                     </div>
                 </div>
             </div> 
+
+        <section id="compra">
+                <div class="text-center">
+                    <h6 class="small fw-light">VENTA</h6>
+                    <h4 class="fs-3">VALOR DE TICKET $200</h4>
+                </div>
+
+                <div class="formulario container-fluid">
+                    <div class="row mt-3">
+                        <div class="col">
+                            <input type="text" class="form-control fw-light" placeholder="Nombre" aria-label="Nombre">
+                        </div>
+    
+                        <div class="col">
+                            <input type="text" class="form-control fw-light" placeholder="Apellido" aria-label="Apellido">
+                        </div>
+                    </div>
+    
+                    <div class="mt-3">
+                        <input type="text" class="form-control fw-light" placeholder="Correo" aria-label="Correo">
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col mt-1">
+                            <p class="small">Cantidad</p>
+                            <input type="text" class="form-control fw-light" placeholder="Cantidad" aria-label="Cantidad">
+                        </div>
+    
+                        <div class="col mt-1">
+                            <p class="small">Categoria</p>
+                            <input type="text" class="form-control fw-light" placeholder="Estudiante" aria-label="Estudiante">
+                        </div>
+                    </div>
+    
+                    <div class="row mt-4">
+                        <div class="col">
+                            <button type="button" class="btn btn-success w-100">Borrar</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-success w-100">Resumen</button>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
         </section>
 
         </main>
