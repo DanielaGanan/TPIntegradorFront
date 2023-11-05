@@ -62,8 +62,8 @@
     width: 50%;
   }
 
-  .estudiante {
-    border: #25a342;
+  .rounded-4 .bg-primary {
+    width: 100%;
   }
 
   .footer .nav-link {

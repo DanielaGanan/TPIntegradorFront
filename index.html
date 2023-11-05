@@ -333,10 +333,29 @@
     
                         <div class="col mt-1">
                             <p class="small">Categoria</p>
-                            <input type="text" class="form-control fw-light" placeholder="Estudiante" aria-label="Estudiante">
+
+                            <div class="form-group">
+
+                                <select class="form-select small" >
+                                    <option class="small" value="Estudiante">Estudiante</option>
+                                    <option class="small" value="Trainee">Trainee</option>
+                                    <option class="small" value="Junior">Junior</option>
+                                </select>
+                            </div> 
                         </div>
+
+                    </div>
+
+                    <!-- Total -->
+                    <div class="d-flex flex-column mt-4">
+                        <output class="rounded bg-primary bg-opacity-25" name="total">
+                            <div class="m-2">
+                                <span class="text-primary-emphasis small">Total a pagar: $</span>
+                            </div>
+                        </output>
                     </div>
     
+                    <!-- Botones -->
                     <div class="row mt-4">
                         <div class="col">
                             <button type="button" class="btn btn-success w-100">Borrar</button>
