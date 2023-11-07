@@ -85,17 +85,21 @@
                         <div class="col-lg-7 offset-lg-6 text-center text-md-end">
                             <h3>Conf Bs As</h3>
                                 <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
-                                comunidad el conocimiento y experiencia de los expertos que estan creando el futuro
-                                de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo
-                                y a los oradores de primer nivel que tenemos para ti. Te esperamos! 
+                                    comunidad el conocimiento y experiencia de los expertos que estan creando el futuro
+                                    de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo
+                                    y a los oradores de primer nivel que tenemos para ti. Te esperamos! 
                                 </p>
-                                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                                <button type="button" class="btn btn-success">Comprar tickets</button>
+                                <a href="#conviertete-orador">
+                                    <button id="quieroSerOrador" type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                                </a>
+                                <a href="#compra">
+                                    <button id="comprarTickets" type="button" class="btn btn-success">Comprar tickets</button>
+                                </a>
                         </div>
                     </div>
                 </div>
               </div>
-              </div>
+            </div>
 
               <div class="carousel-item">
                 <div class="imagenOscurecer opacity-80">
@@ -246,7 +250,6 @@
 
             <div class="formulario container-fluid">
                 <div class="row">
-
                     <div class="col">
                         <input type="text" class="form-control fw-light" placeholder="Nombre" aria-label="Nombre">
                     </div>
@@ -304,67 +307,66 @@
                 </div>
             </div> 
 
-        <section id="compra">
-                <div class="text-center">
+            <section id="compra">
+                    <div class="text-center">
                     <h6 class="small fw-light">VENTA</h6>
                     <h4 class="fs-3">VALOR DE TICKET $200</h4>
-                </div>
+                    </div>
 
-                <div class="formulario container-fluid">
-                    <div class="row mt-3">
-                        <div class="col">
-                            <input id="nombre" type="text" class="form-control fw-light" placeholder="Nombre" aria-label="Nombre">
+                    <div class="formulario container-fluid">
+                        <div class="row mt-3">
+                            <div class="col">
+                                <input id="nombre" type="text" class="form-control fw-light" placeholder="Nombre" aria-label="Nombre">
+                            </div>
+    
+                            <div class="col">
+                                <input id="apellido" type="text" class="form-control fw-light" placeholder="Apellido" aria-label="Apellido">
+                            </div>
                         </div>
     
-                        <div class="col">
-                            <input id="apellido" type="text" class="form-control fw-light" placeholder="Apellido" aria-label="Apellido">
-                        </div>
-                    </div>
-    
-                    <div class="mt-3">
-                        <input id="correo" type="text" class="form-control fw-light" placeholder="Correo" aria-label="Correo">
-                    </div>
-    
-                    <div class="row mt-2">
-                        <div class="col mt-1">
-                            <p class="small">Cantidad</p>
-                            <input id="cantidad" type="text" class="form-control fw-light" placeholder="Cantidad" name="Cantidad">
+                        <div class="mt-3">
+                            <input id="correo" type="text" class="form-control fw-light" placeholder="Correo" aria-label="Correo">
                         </div>
     
-                        <div class="col mt-1">
-                            <p class="small">Categoria</p>
-
-                            <div class="form-group">
-                                <select id="categoria" class="form-select small" >
-                                    <option class="small" value="Estudiante">Estudiante</option>
-                                    <option class="small" value="Trainee">Trainee</option>
-                                    <option class="small" value="Junior">Junior</option>
-                                </select>
-                            </div> 
+                        <div class="row mt-2">
+                            <div class="col mt-1">
+                                <p class="small">Cantidad</p>
+                                <input id="cantidad" type="text" class="form-control fw-light" placeholder="Cantidad" name="Cantidad">
+                            </div>
+    
+                            <div class="col mt-1">
+                                <p class="small">Categoria</p>
+                                <div class="form-group">
+                                    <select id="categoria" class="form-select small" >
+                                        <option class="small" value="Estudiante">Estudiante</option>
+                                        <option class="small" value="Trainee">Trainee</option>
+                                        <option class="small" value="Junior">Junior</option>
+                                    </select>
+                                </div> 
+                            </div>
                         </div>
-                    </div>
 
                     <!-- Total -->
-                    <div class="d-flex flex-column mt-4">
-                        <output id="total" class="rounded bg-primary bg-opacity-25" name="total">
-                            <div class="m-2"> 
-                                <span class="text-primary-emphasis small">Total a pagar: $</span>
-                            </div> 
-                        </output>
-                    </div>
+                        <div class="d-flex flex-column mt-4">
+                            <output id="total" class="rounded bg-primary bg-opacity-25" name="total">
+                                <div class="m-2"> 
+                                    <span class="text-primary-emphasis small">Total a pagar: $</span>
+                                </div> 
+                            </output>
+                        </div>
     
                     <!-- Botones -->
-                    <div class="row mt-4">
-                        <div class="col">
-                            <button id="borrar" type="button" class="btn btn-success w-100">Borrar</button>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button id="borrar" type="button" class="btn btn-success w-100">Borrar</button>
+                            </div>
+                            <div class="col">
+                                <button id="resumen" type="button" class="btn btn-success w-100">Resumen</button>
+                            </div>
                         </div>
-                        <div class="col">
-                            <button id="resumen" type="button" class="btn btn-success w-100">Resumen</button>
-                        </div>
-                    </div>
 
-                </div>
-        </section>
+                    </div>
+            </section>
 
         </section>
 

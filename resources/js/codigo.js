@@ -6,16 +6,23 @@ resumen.addEventListener("click",fResumen);
 const borrar = document.querySelector("#borrar");
 borrar.addEventListener("click",fBorrar);
 
-let cantidad = document.querySelector("#cantidad");
+const cantidad = document.querySelector("#cantidad");
 const categoria = document.querySelector("#categoria");
 
 const nombre = document.querySelector("#nombre");
 const apellido = document.querySelector("#apellido");
 const correo = document.querySelector("#correo");
 
+const orador = document.querySelector("#quieroSerOrador");
+const oradores = document.querySelector("#oradores");
+orador.addEventListener("click",fOrador);
 
-//Funcion Resumen
+const comprar = document.querySelector("#comprarTickets");
+const promo = document.querySelector("#promo");
+comprar.addEventListener("click",fComprar);
 
+
+// Funcion boton Resumen
 function fResumen(evento) {
 
     evento.preventDefault();
@@ -51,6 +58,8 @@ function fResumen(evento) {
 
 }
 
+
+// Funcion boton Borrar 
 function fBorrar (evento) {
 
     cantidad.value = "";
@@ -61,4 +70,21 @@ function fBorrar (evento) {
     correo.value = "";
 
     document.querySelector("#total").textContent = `Total a pagar: $`;
+}
+
+
+// Funcion ir a la seccion quiero se orador
+function fOrador (evento) {
+
+    const orador = document.querySelector("#quieroSerOrador");
+    const oradores = document.querySelector("#oradores");
+
+    const posicion = oradores.getBoundingClientRect().top;
+
+    window.scrollTo({
+        top: posicion + window.scrollY,
+        behavior: "smooth" // Para un desplazamiento suave y animado
+    });
+   
+
 }
